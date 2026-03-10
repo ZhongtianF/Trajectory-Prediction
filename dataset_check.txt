@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/hblffzt/Documents/T2IA_TrajPred/src/dataset.py", line 399, in <module>
+    ds = TrajectoryDataset(scene=s, split="train")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hblffzt/Documents/T2IA_TrajPred/src/dataset.py", line 263, in __init__
+    obs_all, fut_all, meta_all = build_sequences_from_rows(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hblffzt/Documents/T2IA_TrajPred/src/dataset.py", line 190, in build_sequences_from_rows
+    raise ValueError("No valid trajectory sequences could be built from rows.")
+ValueError: No valid trajectory sequences could be built from rows.
+================================================================================
+Scene      : eth
+DB path    : /Users/hblffzt/Documents/T2IA_TrajPred/data/data_trajpred/eth/pos_data.db
+Tables     : ['dataset_T_length_20delta_coordinates']
+Main table : dataset_T_length_20delta_coordinates
+Raw shape  : (7280, 7)
+First 5 rows:
+[[-4.120e+00  1.214e+01 -4.120e+00  1.214e+01  3.590e+02  1.203e+04
+   3.630e+02]
+ [-3.370e+00  1.166e+01  7.500e-01 -4.800e-01  3.590e+02  1.204e+04
+   3.630e+02]
+ [-2.770e+00  1.106e+01  6.000e-01 -6.000e-01  3.590e+02  1.205e+04
+   3.630e+02]
+ [-1.920e+00  1.043e+01  8.500e-01 -6.300e-01  3.590e+02  1.206e+04
+   3.630e+02]
+ [-9.500e-01  9.910e+00  9.700e-01 -5.200e-01  3.590e+02  1.207e+04
+   3.630e+02]]
